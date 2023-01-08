@@ -23,14 +23,18 @@ This plot is a data visualization of the actual 2022 midterm election results of
 1. There are 435 districts, each square represents one district
 2. The color of each square's lines represent the winning political party (Democrat = blue/light blue, Republican = red/pink)
 3. The angle of the slope of the lines in the square match up to the margin of victory. A 2% margin of victory will be a fairly flat slope. A straight vertical line is a blow out of 90% margin (in some instances where there was no opponent it is actually 100% but I have allowed for a 90 max for visual purposes)
-4. The space between the lines in a square varies to make each square lighter or darker so when viewed as a whole it gives the impression of the American flag. This is done by sampling a flag image for the location of each square in the grid and adjusting the line spacing.
-5. The order is alphabetical by state from top left to bottom right. For example, Alabama has 7 districts starting in the top left (6 R and 1 D), Then Alaska's single district (D), Arizona and so on up to Wyoming's single district in the bottom right.
+4. The space between the lines in a square varies to make each square lighter or darker so when viewed as a whole it gives the impression of the American flag. By sampling this modified flag image (wrong number of stars and stripes) for the location of each square in the grid and adjusting the line spacing.
+![](https://github.com/codecreative/ptpx-2022/blob/main/flag.png?raw=true)
+6. The order is alphabetical by state from top left to bottom right. For example, Alabama has 7 districts starting in the top left (6 R and 1 D), Then Alaska's single district (D), Arizona and so on up to Wyoming's single district in the bottom right.
 
 
 #### How it's made
-1. Data from US House election results
+1. Data from US House election [results](https://www.cnn.com/election/2022/results/house?election-data-id=2022-HG)
 2. Processing script, [borrowed heavily from this tutorial](https://sighack.com/post/cohen-sutherland-line-clipping-algorithm) to read data, draw the lines cropped within the squares.
 3. The fantastic Python [vpype](https://vpype.readthedocs.io/en/latest/index.html) and [vsketch](https://vsketch.readthedocs.io/en/latest/) libraries to lay out to the postcard size, write on postcards, etc
+4. Axidraw A3 pen plotter from Evil Mad Scientist
+5. Staedtler triplus fineliner pens ~0.3mm
+6. Winsor & Newton watercolour postcards (was originally planning on using watercolour pens for a different type of plot)
 
 
 #### The prints
